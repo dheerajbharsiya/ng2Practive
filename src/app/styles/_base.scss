@@ -1,0 +1,8 @@
+// base css
+nav {
+    a {
+        &.active {
+        color: #8a7043 !important;
+        }
+     }
+}
