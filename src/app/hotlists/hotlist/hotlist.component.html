@@ -1,17 +1,16 @@
-<section id="one">
-  <div class="inner">
+<div class="row">
+  <div class="col-xs-12">
     <header>
-      <h2>Magna Etiam Lorem</h2>
+      <h2>Recently Added Deals</h2>
     </header>
     <div class="row">
-      <div class="col-xs-4" *ngFor="let deal of deals">
-        <div class="dealBox">
-          hi
-        </div>
+      <div class="col-xs-6" *ngFor="let deal of deals">
+        <app-cribs-list [instantDeal]="deal"></app-cribs-list>
       </div>
     </div>
-    <ul class="actions">
+    <ul class="actions m1-top">
       <li><a href="#" class="button alt">Learn More</a></li>
     </ul>
+
   </div>
-</section>
+</div>

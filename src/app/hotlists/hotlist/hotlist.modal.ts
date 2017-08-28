@@ -3,13 +3,13 @@ export class HotListDeal {
     public description: string;
     public id: string;
     public imagePath: string;
-    public owenarName: string;
+    public price: string;
 
-    constructor(name,description,id,imagePath,owenarName) {
+    constructor(name,description,id,imagePath,price) {
         this.name = name;
         this.description = description;
         this.id = id;
         this.imagePath = imagePath;
-        this.owenarName = owenarName;
+        this.price = price;
     }
 }

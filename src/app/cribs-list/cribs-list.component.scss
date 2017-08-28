@@ -1,0 +1,25 @@
+
+.deal-box {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid gray;
+
+    .box-upper {
+        display: block;
+        .box-upper-left {
+            width: 65%;
+            img {
+                width: 100%;
+                float: left;
+                height: 200px;
+            }
+        }
+        .box-upper-right {
+            padding: 8px;
+            margin-left: 10px;
+            background: grey;
+            min-height: 200px;
+        }
+    }
+}
+

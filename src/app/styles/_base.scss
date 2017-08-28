@@ -6,3 +6,25 @@ nav {
         }
      }
 }
+
+.m1-top {
+    margin-top: 8px;
+}
+
+/*
+for modal pop up fix
+*/
+.fade.show {
+  opacity: 1;
+}
+
+.modal {
+    top: 200px !important;
+}
+/*
+for modal pop up fix
+*/
+
+.img-full {
+    width: 100%;
+}

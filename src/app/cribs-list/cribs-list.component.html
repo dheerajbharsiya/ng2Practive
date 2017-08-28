@@ -1,4 +1,15 @@
-<div class="" *ngFor="let crib of cribs">
-  <div>{{crib.address}}</div>
-   <div>{{crib.type}}</div>
+<div class="deal-box">
+  <div class="box-upper clearfix">
+    <div class="box-upper-left">
+      <a (click)="open()"><img [src]="instantDeal.imagePath"></a>
+    </div>
+    <div class="box-upper-right">
+      <p>{{instantDeal.price}}Rs</p>
+      <button class="btn btn-primary" href="#">
+        <i class="fa fa-shopping-cart fa-lg"></i>
+        Add To Cart
+      </button>
+    </div>
+  </div>
+  <div class="">{{instantDeal.description}}</div>
 </div>

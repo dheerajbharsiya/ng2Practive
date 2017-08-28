@@ -1,3 +1,4 @@
+import { LoginComponent } from './core/login/login.component';
 import { HotlistComponent } from './hotlists/hotlist/hotlist.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,9 @@ const routes: Routes = [
     },
     {
         path: 'home', component: HotlistComponent
+    },
+    {
+        path: 'login', component: LoginComponent
     },
     { path: '**', component: HotlistComponent }
 ];

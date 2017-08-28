@@ -1,4 +1,5 @@
-import { HotListDeal } from './hotlistModel';
+import { HotListService } from './hotlist.service';
+import { cribs } from './../../data/cribts';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -9,17 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotlistComponent implements OnInit {
 
-  deals: HotListDeal[] = [];
+  deals:Array<any> = [];
 
-  constructor() {
-
+  constructor(private hotListService: HotListService) {
   }
 
   ngOnInit() {
-    this.deals.push(new HotListDeal('dheerajOfer', 'newOffer', '1', '', 'Dheeraj'));
-    this.deals.push(new HotListDeal('testOffer', 'testOffer', '2', '', 'Sureaj'));
-    this.deals.push(new HotListDeal('testOffer1', 'testOffer', '2', '', 'Sureaj'));
-    
+    this.deals = this.hotListService.getHotDeals();
   }
 
 }
