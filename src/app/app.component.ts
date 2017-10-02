@@ -15,4 +15,7 @@ export class AppComponent implements OnInit {
 
   }
 
+  public onUserLogIn ($event) : void {
+    console.log($event);
+  }
 }

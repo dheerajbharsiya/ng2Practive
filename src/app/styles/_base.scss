@@ -28,3 +28,14 @@ for modal pop up fix
 .img-full {
     width: 100%;
 }
+
+//for inputs validity
+input.ng-invalid.ng-touched {
+    border: 1px solid red !important;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio !important;
+    z-index: 2 !important;
+    opacity: 1 !important;
+}

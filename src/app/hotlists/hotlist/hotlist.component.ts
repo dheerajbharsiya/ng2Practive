@@ -19,4 +19,8 @@ export class HotlistComponent implements OnInit {
     this.deals = this.hotListService.getHotDeals();
   }
 
+  public onDealSelected($event) {
+    console.log("in event"+$event);
+  }
+
 }

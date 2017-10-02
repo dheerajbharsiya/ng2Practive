@@ -1,5 +1,17 @@
 <div class="row">
   <div class="col-xs-12">
-    hiell
+    <form class="form-horizontal" (ngSubmit)="onSignIn(f)" name="loginForm" #f="ngForm">
+      <div class="form-heading">
+        <h2>Sign In</h2>
+      </div>
+      <div class="form-group" >
+        <input type="email" class="form-control" placeholder="Email" name="email" #email="ngModel" ngModel required/>
+      </div>
+      <div class="form-group" >
+        <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel" ngModel ng-minLength="8"
+          required/>
+      </div>
+      <button class="btn btn-default pull-right" type="submit" >Sign In</button>
+    </form>
   </div>
 </div>

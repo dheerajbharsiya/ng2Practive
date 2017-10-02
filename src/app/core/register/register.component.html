@@ -1,0 +1,28 @@
+<form name="form" (ngSubmit)="onFormSubmit(f)" [formGroup] ="singUpForm" novalidate>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" class="form-control" name="firstName" formControlName="firstName" />
+    <div  class="help-block" *ngIf="!singUpForm.get('firstName').valid && singUpForm.get('firstName').touched">
+      <span *ngIf="singUpForm.get('firstName').errors['required']">First Name is required</span>
+      <span *ngIf="singUpForm.get('firstName').errors['userNameInvalid']">First Name is Invalid</span>
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" name="lastName" formControlName="lastName" />
+    <div  class="help-block" *ngIf="singUpForm.get('lastName').touched && !singUpForm.get('lastName').valid">Last Name is required</div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Email</label>
+    <input type="text" class="form-control" name="email" formControlName="email"  />
+    <div  class="help-block" *ngIf="singUpForm.get('email').touched && !singUpForm.get('email').valid">Email is required</div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="text" class="form-control" name="password" formControlName="password"  />
+    <div  class="help-block" *ngIf="singUpForm.get('password').touched && !singUpForm.get('password').valid">Password is required</div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary">Register</button>
+  </div>
+</form>

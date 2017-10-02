@@ -4,8 +4,8 @@
       <a (click)="open()"><img [src]="instantDeal.imagePath"></a>
     </div>
     <div class="box-upper-right">
-      <p>{{instantDeal.price}}Rs</p>
-      <button class="btn btn-primary" href="#">
+      <p>{{instantDeal.price | transFormPrice}}Rs</p>
+      <button class="btn btn-primary" href="#" (click)="onDealSelected()">
         <i class="fa fa-shopping-cart fa-lg"></i>
         Add To Cart
       </button>
