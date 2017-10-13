@@ -1,15 +1,20 @@
 <div class="deal-box">
-  <div class="box-upper clearfix">
-    <div class="box-upper-left">
-      <a (click)="open()"><img [src]="instantDeal.imagePath"></a>
-    </div>
-    <div class="box-upper-right">
-      <p>{{instantDeal.price | transFormPrice}}Rs</p>
-      <button class="btn btn-primary" href="#" (click)="onDealSelected()">
+	<div class="box-upper clearfix">
+		<div class="box-upper-left">
+			<a (click)="open()"><img [src]="instantDeal.imagePath"></a>
+		</div>
+		<div class="box-upper-right">
+			<p>{{instantDeal.price | transFormPrice}}Rs</p>
+			<button class="btn btn-primary" href="#" (click)="onDealSelected()">
         <i class="fa fa-shopping-cart fa-lg"></i>
         Add To Cart
       </button>
-    </div>
-  </div>
-  <div class="">{{instantDeal.description}}</div>
+		</div>
+	</div>
+	<div class="">{{instantDeal.description}}</div>
+</div>
+<div>
+	<div *ngIf="myCondition; then thenBlock else elseBlock">Truthy condition</div>
+  <ng-template #thenBlock> this is then block </ng-template>
+  <ng-template #elseBlock> this is else block </ng-template>
 </div>

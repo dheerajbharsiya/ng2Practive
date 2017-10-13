@@ -13,7 +13,7 @@ export class CribsListComponent implements OnInit {
   @Input() instantDeal: HotListDeal;
   @Output() dealSelected = new EventEmitter<String>();
   constructor(private modalService: NgbModal) { }
-
+  myCondition: boolean = true;
 
 
   open() {

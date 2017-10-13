@@ -1,5 +1,6 @@
 import { ServerService } from './../core/server.service';
 import { Component, OnInit } from '@angular/core';
+import {Response} from '@angular/http';
 
 @Component({
   selector: 'app-my-cart',
